@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Cloutix Success Stories & Case Studies</title>
+    <meta name="description" content="Explore our portfolio of successful social media campaigns, brand transformations, and digital marketing case studies.">
+    <meta name="keywords" content="social media portfolio, digital marketing case studies, brand success stories">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Cloutix</a>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html#services">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="about.html">About</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="portfolio-hero">
+        <div class="container">
+            <h1 class="section-title reveal">Our <span class="gradient-text">Portfolio</span></h1>
+            <p class="hero-subtitle reveal">Real results from real brands. Explore our success stories and see how we've transformed businesses across industries.</p>
+            <div class="portfolio-stats">
+                <div class="stat reveal">
+                    <div class="stat-number" data-target="200">0</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat reveal">
+                    <div class="stat-number" data-target="150">0</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat reveal">
+                    <div class="stat-number" data-target="98">0</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterPortfolio('all')">All</button>
+                <button class="filter-btn" onclick="filterPortfolio('social-media')">Social Media</button>
+                <button class="filter-btn" onclick="filterPortfolio('branding')">Branding</button>
+                <button class="filter-btn" onclick="filterPortfolio('paid-ads')">Paid Ads</button>
+                <button class="filter-btn" onclick="filterPortfolio('content')">Content Creation</button>
+                <button class="filter-btn" onclick="filterPortfolio('ecommerce')">E-commerce</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-section">
+        <div class="container">
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-item social-media reveal" data-category="social-media">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <div class="portfolio-placeholder">📱</div>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-category">Social Media</div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Fashion Forward - Instagram Growth</h3>
+                            <p>Luxury fashion brand seeking to establish digital presence</p>
+                            <div class="portfolio-metrics">
+                                <div class="metric">
+                                    <span class="metric-value">300%</span>
+                                    <span class="metric-label">Follower Growth</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">45%</span>
+                                    <span class="metric-label">Engagement Rate</span>
+                                </div>
+                            </div>
+                            <a href="#" class="portfolio-link">View Case Study →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="portfolio-item branding reveal" data-category="branding">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <div class="portfolio-placeholder">🎨</div>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-category">Branding</div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>TechFlow - Complete Brand Identity</h3>
+                            <p>SaaS startup needing professional brand positioning</p>
+                            <div class="portfolio-metrics">
+                                <div class="metric">
+                                    <span class="metric-value">₹2Cr</span>
+                                    <span class="metric-label">Funding Raised</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">95%</span>
+                                    <span class="metric-label">Brand Recognition</span>
+                                </div>
+                            </div>
+                            <a href="#" class="portfolio-link">View Case Study →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="portfolio-item paid-ads reveal" data-category="paid-ads">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <div class="portfolio-placeholder">📢</div>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-category">Paid Ads</div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>EcoWear - E-commerce Campaign</h3>
+                            <p>Sustainable fashion brand driving online sales</p>
+                            <div class="portfolio-metrics">
+                                <div class="metric">
+                                    <span class="metric-value">5x</span>
+                                    <span class="metric-label">ROAS</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">₹50L</span>
+                                    <span class="metric-label">Revenue Generated</span>
+                                </div>
+                            </div>
+                            <a href="#" class="portfolio-link">View Case Study →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="portfolio-item content reveal" data-category="content">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <div class="portfolio-placeholder">🎥</div>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-category">Content Creation</div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>HomeChef India - Viral Content Series</h3>
+                            <p>Cooking channel transforming raw footage into viral hits</p>
+                            <div class="portfolio-metrics">
+                                <div class="metric">
+                                    <span class="metric-value">2M</span>
+                                    <span class="metric-label">Total Views</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">100K</span>
+                                    <span class="metric-label">Subscribers Gained</span>
+                                </div>
+                            </div>
+                            <a href="#" class="portfolio-link">View Case Study →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="portfolio-item ecommerce reveal" data-category="ecommerce">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <div class="portfolio-placeholder">🛒</div>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-category">E-commerce</div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Handmade Crafts - Online Marketplace</h3>
+                            <p>Artisan marketplace connecting creators with customers</p>
+                            <div class="portfolio-metrics">
+                                <div class="metric">
+                                    <span class="metric-value">₹50L</span>
+                                    <span class="metric-label">First Year Revenue</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">500+</span>
+                                    <span class="metric-label">Artisan Partners</span>
+                                </div>
+                            </div>
+                            <a href="#" class="portfolio-link">View Case Study →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="portfolio-item social-media reveal" data-category="social-media">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <div class="portfolio-placeholder">📸</div>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-category">Social Media</div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>The Coffee House - Local Brand Growth</h3>
+                            <p>Café chain building community through social media</p>
+                            <div class="portfolio-metrics">
+                                <div class="metric">
+                                    <span class="metric-value">25x</span>
+                                    <span class="metric-label">Follower Growth</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">60%</span>
+                                    <span class="metric-label">Foot Traffic Increase</span>
+                                </div>
+                            </div>
+                            <a href="#" class="portfolio-link">View Case Study →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Case Study -->
+    <section class="featured-case">
+        <div class="container">
+            <h2 class="section-title reveal">Featured <span class="gradient-text">Case Study</span></h2>
+            <div class="case-study-featured">
+                <div class="case-study-content reveal">
+                    <div class="case-study-header">
+                        <div class="case-study-badge">Featured</div>
+                        <h3>From ₹2L to ₹50L Revenue: Complete Digital Transformation</h3>
+                        <p class="case-study-client">Client: FashionKart - Online Fashion Retailer</p>
+                    </div>
+
+                    <div class="case-study-challenge">
+                        <h4>The Challenge</h4>
+                        <p>FashionKart was struggling with low conversion rates, poor brand awareness, and ineffective paid advertising campaigns. They needed a complete digital overhaul to compete in the competitive e-commerce space.</p>
+                    </div>
+
+                    <div class="case-study-solution">
+                        <h4>Our Solution</h4>
+                        <ul>
+                            <li>Complete brand identity redesign and positioning</li>
+                            <li>Comprehensive Meta & Google Ads campaign optimization</li>
+                            <li>Social media content strategy and community building</li>
+                            <li>E-commerce website optimization and user experience improvements</li>
+                            <li>Data-driven performance tracking and continuous optimization</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-study-results">
+                        <h4>Results Achieved</h4>
+                        <div class="results-grid">
+                            <div class="result-item">
+                                <div class="result-value">25x</div>
+                                <div class="result-label">Revenue Growth</div>
+                            </div>
+                            <div class="result-item">
+                                <div class="result-value">70%</div>
+                                <div class="result-label">CPA Reduction</div>
+                            </div>
+                            <div class="result-item">
+                                <div class="result-value">5x</div>
+                                <div class="result-label">ROAS</div>
+                            </div>
+                            <div class="result-item">
+                                <div class="result-value">50K+</div>
+                                <div class="result-label">New Customers</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="case-study-visual reveal">
+                    <div class="case-study-image">
+                        <div class="case-placeholder">📊</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section class="industries-section">
+        <div class="container">
+            <h2 class="section-title reveal">Industries We <span class="gradient-text">Serve</span></h2>
+            <div class="industries-grid">
+                <div class="industry-card reveal">
+                    <div class="industry-icon">🛒</div>
+                    <h3>E-commerce</h3>
+                    <p>Driving online sales and brand awareness</p>
+                </div>
+                <div class="industry-card reveal">
+                    <div class="industry-icon">🏪</div>
+                    <h3>Retail & Local Business</h3>
+                    <p>Building community and driving foot traffic</p>
+                </div>
+                <div class="industry-card reveal">
+                    <div class="industry-icon">🚀</div>
+                    <h3>Startups & SaaS</h3>
+                    <p>Accelerating growth and user acquisition</p>
+                </div>
+                <div class="industry-card reveal">
+                    <div class="industry-icon">💄</div>
+                    <h3>Beauty & Fashion</h3>
+                    <p>Creating aspirational brand experiences</p>
+                </div>
+                <div class="industry-card reveal">
+                    <div class="industry-icon">🏭</div>
+                    <h3>Manufacturing</h3>
+                    <p>B2B lead generation and brand positioning</p>
+                </div>
+                <div class="industry-card reveal">
+                    <div class="industry-icon">🍔</div>
+                    <h3>Food & Hospitality</h3>
+                    <p>Building loyalty and driving reservations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content reveal">
+                <h2>Ready to Create Your <span class="gradient-text">Success Story</span>?</h2>
+                <p>Join 200+ brands who've transformed their business with Cloutix.</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/919876543210?text=Hi%20Cloutix,%20I%20want%20to%20book%20a%20free%20strategy%20call" class="btn-primary" target="_blank">Start Your Project</a>
+                    <a href="contact.html" class="btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Cloutix</h3>
+                    <p>We Build Digital Clout for Brands</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <a href="social-media-management.html">Social Media Management</a>
+                        <a href="content-creation.html">Content Creation</a>
+                        <a href="paid-ads.html">Paid Ads</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="about.html">About Us</a>
+                        <a href="portfolio.html">Portfolio</a>
+                        <a href="blog.html">Blog</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <a href="mailto:hello@cloutix.in">hello@cloutix.in</a>
+                        <a href="https://wa.me/919876543210" target="_blank">WhatsApp</a>
+                        <a href="contact.html">Contact Form</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Cloutix. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Portfolio Filter Functionality
+        function filterPortfolio(category) {
+            const items = document.querySelectorAll('.portfolio-item');
+            const buttons = document.querySelectorAll('.filter-btn');
+
+            // Update active button
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            // Filter items
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'block';
+                    item.style.animation = 'fadeIn 0.5s ease forwards';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Add fadeIn animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(20px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloutix - We Build Digital Clout for Brands</title>
+    <meta name="description" content="Social media management, content creation & growth systems for creators and businesses. Book free strategy call now.">
+    <meta name="keywords" content="social media agency India, Instagram marketing agency, YouTube growth agency, digital marketing India">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress">
+        <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+    </div>
+
+    <!-- WhatsApp CTA -->
+    <a href="https://wa.me/919876543210?text=Hi%20Cloutix,%20I%20want%20to%20book%20a%20free%20strategy%20call" class="whatsapp-cta" target="_blank">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+        </svg>
+    </a>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#hero">Cloutix</a>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="#services">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="about.html">About</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content reveal">
+                <h1 id="ab-headline" class="hero-title">
+                    We Build Digital <span class="gradient-text">Clout</span> for Brands
+                </h1>
+                <p class="hero-subtitle">
+                    Social media management, content creation & growth systems for creators and businesses.
+                </p>
+                <div class="hero-ctas">
+                    <a href="#contact" class="btn-primary">Book Free Strategy Call</a>
+                    <a href="#services" class="btn-secondary">Explore Services</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-cards">
+                    <div class="card card1 reveal">
+                        <div class="card-icon">📈</div>
+                        <div class="card-stats">
+                            <span class="stat-number" data-target="250">0</span>%
+                            <span class="stat-label">Growth</span>
+                        </div>
+                    </div>
+                    <div class="card card2 reveal">
+                        <div class="card-icon">👥</div>
+                        <div class="card-stats">
+                            <span class="stat-number" data-target="500">0</span>K+
+                            <span class="stat-label">Followers</span>
+                        </div>
+                    </div>
+                    <div class="card card3 reveal">
+                        <div class="card-icon">💰</div>
+                        <div class="card-stats">
+                            <span class="stat-number" data-target="10">0</span>L+
+                            <span class="stat-label">Revenue</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg">
+            <div class="parallax-bg"></div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 class="section-title reveal">Our <span class="gradient-text">Services</span></h2>
+            <div class="services-grid">
+                <div class="service-card reveal" onclick="window.location.href='social-media-management.html'">
+                    <div class="service-icon">📱</div>
+                    <h3>Social Media Management</h3>
+                    <p>Strategy, Content Calendars, and Community Growth.</p>
+                    <div class="service-hover">Learn More →</div>
+                </div>
+                <div class="service-card reveal" onclick="window.location.href='content-creation.html'">
+                    <div class="service-icon">🎨</div>
+                    <h3>Content Creation</h3>
+                    <p>Engaging visuals, copy, and multimedia content.</p>
+                    <div class="service-hover">Learn More →</div>
+                </div>
+                <div class="service-card reveal" onclick="window.location.href='video-editing.html'">
+                    <div class="service-icon">🎥</div>
+                    <h3>Video Editing</h3>
+                    <p>Professional video production and editing services.</p>
+                    <div class="service-hover">Learn More →</div>
+                </div>
+                <div class="service-card reveal" onclick="window.location.href='graphic-design.html'">
+                    <div class="service-icon">🎨</div>
+                    <h3>Graphic Design</h3>
+                    <p>Stunning graphics for social media and branding.</p>
+                    <div class="service-hover">Learn More →</div>
+                </div>
+                <div class="service-card reveal" onclick="window.location.href='branding.html'">
+                    <div class="service-icon">🏷️</div>
+                    <h3>Branding</h3>
+                    <p>Complete brand identity and positioning.</p>
+                    <div class="service-hover">Learn More →</div>
+                </div>
+                <div class="service-card reveal" onclick="window.location.href='website-development.html'">
+                    <div class="service-icon">💻</div>
+                    <h3>Website Development</h3>
+                    <p>Modern, responsive websites for your business.</p>
+                    <div class="service-hover">Learn More →</div>
+                </div>
+                <div class="service-card reveal" onclick="window.location.href='youtube-growth.html'">
+                    <div class="service-icon">📺</div>
+                    <h3>YouTube Growth</h3>
+                    <p>Channel optimization and subscriber growth.</p>
+                    <div class="service-hover">Learn More →</div>
+                </div>
+                <div class="service-card reveal" onclick="window.location.href='instagram-growth.html'">
+                    <div class="service-icon">📸</div>
+                    <h3>Instagram Growth</h3>
+                    <p>Organic growth and engagement strategies.</p>
+                    <div class="service-hover">Learn More →</div>
+                </div>
+                <div class="service-card reveal" onclick="window.location.href='paid-ads.html'">
+                    <div class="service-icon">📢</div>
+                    <h3>Paid Ads</h3>
+                    <p>Meta & Google Ads for maximum ROI.</p>
+                    <div class="service-hover">Learn More →</div>
+                </div>
+                <div class="service-card reveal" onclick="window.location.href='influencer-marketing.html'">
+                    <div class="service-icon">🌟</div>
+                    <h3>Influencer Marketing</h3>
+                    <p>Collaborations and influencer campaigns.</p>
+                    <div class="service-hover">Learn More →</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Cloutix -->
+    <section class="why-section">
+        <div class="container">
+            <h2 class="section-title reveal">Why Choose <span class="gradient-text">Cloutix</span>?</h2>
+            <div class="why-grid">
+                <div class="why-card reveal">
+                    <div class="why-icon">🎯</div>
+                    <h3>Data-Driven Growth</h3>
+                    <p>We use analytics to drive real results, not guesswork.</p>
+                </div>
+                <div class="why-card reveal">
+                    <div class="why-icon">🚀</div>
+                    <h3>Proven Track Record</h3>
+                    <p>Helped 200+ brands achieve 10x growth in 6 months.</p>
+                </div>
+                <div class="why-card reveal">
+                    <div class="why-icon">💡</div>
+                    <h3>Creative Excellence</h3>
+                    <p>Award-winning creatives crafting viral content.</p>
+                </div>
+                <div class="why-card reveal">
+                    <div class="why-icon">🤝</div>
+                    <h3>Trusted Partnership</h3>
+                    <p>Your success is our success. Transparent reporting.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-section">
+        <div class="container">
+            <h2 class="section-title reveal">How It <span class="gradient-text">Works</span></h2>
+            <div class="how-steps">
+                <div class="step reveal">
+                    <div class="step-number">01</div>
+                    <h3>Strategy Session</h3>
+                    <p>We analyze your brand and create a custom growth plan.</p>
+                </div>
+                <div class="step reveal">
+                    <div class="step-number">02</div>
+                    <h3>Content Creation</h3>
+                    <p>Our team produces engaging content tailored to your audience.</p>
+                </div>
+                <div class="step reveal">
+                    <div class="step-number">03</div>
+                    <h3>Growth Execution</h3>
+                    <p>We implement strategies and optimize for maximum results.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Animated Stats -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item reveal">
+                    <div class="stat-number" data-target="200">0</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-item reveal">
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-item reveal">
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-label">Team Members</div>
+                </div>
+                <div class="stat-item reveal">
+                    <div class="stat-number" data-target="98">0</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title reveal">What Our Clients <span class="gradient-text">Say</span></h2>
+            <div class="testimonials-slider">
+                <div class="testimonial reveal">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p>"Cloutix transformed our social media presence. Our engagement increased by 300% in just 2 months!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RS</div>
+                        <div class="author-info">
+                            <div class="author-name">Rohit Sharma</div>
+                            <div class="author-title">Founder, TechStartup</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial reveal">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p>"The team's creativity and data-driven approach helped us go viral multiple times. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">PK</div>
+                        <div class="author-info">
+                            <div class="author-name">Priya Kapoor</div>
+                            <div class="author-title">CEO, Fashion Brand</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial reveal">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p>"Professional, reliable, and results-oriented. Cloutix is our go-to agency for all digital marketing needs."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AK</div>
+                        <div class="author-info">
+                            <div class="author-name">Amit Kumar</div>
+                            <div class="author-title">Marketing Head, E-commerce</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools & Platforms -->
+    <section class="tools-section">
+        <div class="container">
+            <h2 class="section-title reveal">Tools & Platforms We <span class="gradient-text">Master</span></h2>
+            <div class="tools-grid">
+                <div class="tool-logo reveal">Instagram</div>
+                <div class="tool-logo reveal">Facebook</div>
+                <div class="tool-logo reveal">YouTube</div>
+                <div class="tool-logo reveal">TikTok</div>
+                <div class="tool-logo reveal">LinkedIn</div>
+                <div class="tool-logo reveal">Twitter</div>
+                <div class="tool-logo reveal">Canva</div>
+                <div class="tool-logo reveal">Adobe Creative Suite</div>
+                <div class="tool-logo reveal">Google Ads</div>
+                <div class="tool-logo reveal">Meta Ads</div>
+                <div class="tool-logo reveal">Analytics</div>
+                <div class="tool-logo reveal">Hootsuite</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content reveal">
+                <h2>Ready to Build Your Digital <span class="gradient-text">Clout</span>?</h2>
+                <p>Join 200+ brands who've transformed their online presence with Cloutix.</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/919876543210?text=Hi%20Cloutix,%20I%20want%20to%20book%20a%20free%20strategy%20call" class="btn-primary" target="_blank">WhatsApp Us</a>
+                    <a href="contact.html" class="btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Cloutix</h3>
+                    <p>We Build Digital Clout for Brands</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <a href="social-media-management.html">Social Media Management</a>
+                        <a href="content-creation.html">Content Creation</a>
+                        <a href="paid-ads.html">Paid Ads</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="about.html">About Us</a>
+                        <a href="portfolio.html">Portfolio</a>
+                        <a href="blog.html">Blog</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <a href="mailto:hello@cloutix.in">hello@cloutix.in</a>
+                        <a href="https://wa.me/919876543210" target="_blank">WhatsApp</a>
+                        <a href="contact.html">Contact Form</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Cloutix. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

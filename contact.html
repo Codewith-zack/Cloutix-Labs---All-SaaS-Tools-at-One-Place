@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Cloutix - Let's Build Your Digital Success</title>
+    <meta name="description" content="Get in touch with Cloutix for your social media marketing needs. Book a free strategy call or send us a message.">
+    <meta name="keywords" content="contact Cloutix, social media agency contact, digital marketing consultation">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Cloutix</a>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html#services">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="about.html">About</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1 class="section-title reveal">Let's Build Your <span class="gradient-text">Digital Success</span></h1>
+            <p class="hero-subtitle reveal">Ready to take your brand to the next level? We're here to help.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-container reveal">
+                    <h2>Get In Touch</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service" required>
+                                <option value="">Select Service</option>
+                                <option value="social-media-management">Social Media Management</option>
+                                <option value="content-creation">Content Creation</option>
+                                <option value="video-editing">Video Editing</option>
+                                <option value="graphic-design">Graphic Design</option>
+                                <option value="branding">Branding</option>
+                                <option value="website-development">Website Development</option>
+                                <option value="youtube-growth">YouTube Growth</option>
+                                <option value="instagram-growth">Instagram Growth</option>
+                                <option value="paid-ads">Paid Ads</option>
+                                <option value="influencer-marketing">Influencer Marketing</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Tell us about your project..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info reveal">
+                    <div class="info-card">
+                        <div class="info-icon">📧</div>
+                        <h3>Email Us</h3>
+                        <p>hello@cloutix.in</p>
+                        <a href="mailto:hello@cloutix.in" class="info-link">Send Email →</a>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">📱</div>
+                        <h3>WhatsApp</h3>
+                        <p>+91 98765 43210</p>
+                        <a href="https://wa.me/919876543210?text=Hi%20Cloutix,%20I%20want%20to%20discuss%20my%20project" class="info-link" target="_blank">Start Chat →</a>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">📍</div>
+                        <h3>Office</h3>
+                        <p>Mumbai, Maharashtra<br>India</p>
+                        <a href="#" class="info-link">View Map →</a>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">⏰</div>
+                        <h3>Business Hours</h3>
+                        <p>Mon - Fri: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="map-container reveal">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609981232!2d72.74109995!3d19.08219785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1703123456789!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title reveal">Frequently Asked <span class="gradient-text">Questions</span></h2>
+            <div class="faq-grid">
+                <div class="faq-item reveal">
+                    <h3>How quickly do you respond?</h3>
+                    <p>We respond to all inquiries within 24 hours. For urgent matters, you can reach us directly on WhatsApp.</p>
+                </div>
+                <div class="faq-item reveal">
+                    <h3>Do you work with international clients?</h3>
+                    <p>Yes! We work with clients globally, adapting our strategies to different markets and cultures.</p>
+                </div>
+                <div class="faq-item reveal">
+                    <h3>What's the typical project timeline?</h3>
+                    <p>Most projects start within 1-2 weeks. Timeline depends on scope, but we always provide clear timelines upfront.</p>
+                </div>
+                <div class="faq-item reveal">
+                    <h3>Can I see examples of your work?</h3>
+                    <p>Absolutely! Check out our portfolio page or book a call to see relevant case studies for your industry.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content reveal">
+                <h2>Ready to Start Your <span class="gradient-text">Growth Journey</span>?</h2>
+                <p>Book a free 30-minute strategy call to discuss your goals and see how we can help.</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/919876543210?text=Hi%20Cloutix,%20I%20want%20to%20book%20a%20free%20strategy%20call" class="btn-primary" target="_blank">Book Free Call</a>
+                    <a href="mailto:hello@cloutix.in" class="btn-secondary">Send Email</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Cloutix</h3>
+                    <p>We Build Digital Clout for Brands</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <a href="social-media-management.html">Social Media Management</a>
+                        <a href="content-creation.html">Content Creation</a>
+                        <a href="paid-ads.html">Paid Ads</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="about.html">About Us</a>
+                        <a href="portfolio.html">Portfolio</a>
+                        <a href="blog.html">Blog</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <a href="mailto:hello@cloutix.in">hello@cloutix.in</a>
+                        <a href="https://wa.me/919876543210" target="_blank">WhatsApp</a>
+                        <a href="contact.html">Contact Form</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Cloutix. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simple form validation
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            if (name && email && message) {
+                alert('Thank you for your message! We\'ll get back to you within 24 hours.');
+                this.reset();
+            } else {
+                alert('Please fill in all required fields.');
+            }
+        });
+    </script>
+</body>
+</html>
